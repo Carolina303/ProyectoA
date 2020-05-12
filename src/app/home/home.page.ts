@@ -9,7 +9,7 @@ export class HomePage {
 
   slides = [
     {
-      img:'/assets/img/img1.jpg',
+      img: '/assets/img/img1.jpg',
       titulo: 'Como funcionamos'  
     },
     {
