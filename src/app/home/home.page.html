@@ -1,7 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
+
+    <ion-title >
+      PROYECTO A 
+
     <ion-title style="text-align: center;">
       <img src="../../assets/img/logo1.jpeg"/>
+
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -10,11 +15,30 @@
   <ion-slides pager="true">
 
     <ion-slide *ngFor="let slide of slides">
+
+      <div class ="titulo">
+
       <div class="titulo">
+
         <h3>{{slide.titulo}}</h3>
         <img src={{slide.img}}/>
       </div>
       <div>
+
+        <h3 [innerHTML]="slides.img"></h3>
+      </div>
+      
+    </ion-slide>
+  </ion-slides> 
+  
+</ion-content>
+
+<ion-content>
+  <ion-slides pager="true">
+
+    <ion-slide *ngFor="let slide of slides">
+      <div class ="titulo">
+
         <h3 [innerHTML]="slides.img"> </h3>
       </div>
     </ion-slide>
@@ -23,11 +47,16 @@
 
     <ion-slide *ngFor="let slide of slides">
       <div class="titulo">
+
         <h3>{{slide.titulo}}</h3>
         <img src={{slide.img}}/>
       </div>
       <div>
+
+        <h3 [innerHTML]="slides.img"></h3>
+
         <h3 [innerHTML]="slides.img"> </h3>
+
       </div>
     </ion-slide>
   </ion-slides> 
