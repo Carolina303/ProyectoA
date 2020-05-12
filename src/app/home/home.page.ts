@@ -9,7 +9,8 @@ export class HomePage {
 
   slides = [
     {
-      img:'/assets/img/img1.jpg',
+      
+      img:'assets/img/img1.jpg',
       titulo: 'Como funcionamos'  
     },
     {
@@ -18,12 +19,13 @@ export class HomePage {
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'Validamos que todo</br>este en orden' 
+      titulo: 'Validamos que todo este en orden' 
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'con un algoritmo<br>analizamos los negocios<br>que te pudieran interesar' 
+      titulo: 'con un algoritmo analizamos los negocios que te pudieran interesar' 
     },
-  
   ];
 }
+
+
