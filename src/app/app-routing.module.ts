@@ -22,9 +22,14 @@ const routes: Routes = [
   {
     path: 'registroempresa',
     loadChildren: () => import('./registroempresa/registroempresa.module').then( m => m.RegistroempresaPageModule)
-  },  {
+  },
+  {
     path: 'listempresa',
     loadChildren: () => import('./listempresa/listempresa.module').then( m => m.ListempresaPageModule)
+  },
+  {
+    path: 'inversion/:name/:img',
+    loadChildren: () => import('./inversion/inversion.module').then( m => m.InversionPageModule)
   },
 
 ];
