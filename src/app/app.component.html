@@ -2,19 +2,23 @@
 
   <ion-menu side="start" menuId="first" contentId="main">
     <ion-header>
-      <ion-toolbar color="primary">
-        <ion-title>Start Menu</ion-title>
-      </ion-toolbar>
+      <ion-toolbar color="primary"></ion-toolbar>
     </ion-header>
     <ion-content>
       <ion-list>
+
+        <ion-item routerLink="/home">
+          <ion-icon slot="start" name="home"></ion-icon>
+          Home</ion-item>
+
+        <ion-item>Categoria</ion-item>
         <ion-item>Menu Item</ion-item>
         <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>
+
+        <ion-item routerLink="/login">
           <ion-icon slot="start" name="person" ></ion-icon>
-          Registrarse</ion-item>
+          Login</ion-item>
+
       </ion-list>
     </ion-content>
   </ion-menu>
