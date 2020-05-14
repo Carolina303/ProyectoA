@@ -1,10 +1,8 @@
 <ion-header>
   <ion-toolbar>
-
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    
     <ion-title>listempresa</ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,16 +11,23 @@
   
   <ion-list>
     <ion-item *ngFor="let list of listempresa " >
+      <ion-avatar slot="start" (click)="gotoInversion(list.name, list.img, list.text)">
+        <ion-img  [src]="list.img"></ion-img>
+      </ion-avatar>
+      <ion-label>
+        {{list.name}}
+      </ion-label>
 
 
-      <ion-thumbnail slot="start">
-       <!-- <ion-img  [src]="list.img"></ion-img>-->
+ 
+    <!--
+      <ion-thumbnail >
+       <ion-img slot="start" [src]="list.img"></ion-img>
         <div class="title">
-        <h1 (click)="gotoinversion(list.name, list.img)">{{list.name}}</h1>
-        
+        <h1 (click)="gotoinversion(list.name, list.img, list.text)">{{list.name}}</h1>
         </div>
       </ion-thumbnail>
-
+      -->
     </ion-item>
   </ion-list>
 

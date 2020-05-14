@@ -28,10 +28,10 @@ const routes: Routes = [
     loadChildren: () => import('./listempresa/listempresa.module').then( m => m.ListempresaPageModule)
   },
   {
-    path: 'inversion/:name/:img',
+    path: 'inversion/:name/:img/:text',
     loadChildren: () => import('./inversion/inversion.module').then( m => m.InversionPageModule)
   },
-
+ 
 ];
 
 @NgModule({
