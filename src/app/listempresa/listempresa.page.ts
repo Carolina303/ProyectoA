@@ -17,8 +17,8 @@ export class ListempresaPage  {
     })
   }
 
-  gotoinversion(name, img){
-    this.router.navigate( ['/inversion',name,img] );
+  gotoInversion(name,img,text){
+    this.router.navigate( ['/inversion',name,img,text] );
   }
 
-}
+} 

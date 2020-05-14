@@ -10,14 +10,16 @@ import { ActivatedRoute } from '@angular/router';
 export class InversionPage implements OnInit {
   list = {
     name:"",
-    img:""
+    img:"",
+    text:""
   }
-
+ 
   constructor(  private activatedRoute: ActivatedRoute ) { }
 
   ngOnInit() {
     this.list.name=this.activatedRoute.snapshot.paramMap.get('name');
+    this.list.text=this.activatedRoute.snapshot.paramMap.get('text');
     this.list.img=this.activatedRoute.snapshot.paramMap.get('img');
   }
- 
+
 }
