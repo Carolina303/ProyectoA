@@ -11,25 +11,29 @@ export class HomePage {
     {
 
       img: '/assets/img/img1.jpg',
-
-      
-      img:'assets/img/img1.jpg',
-
-      titulo: 'Como funcionamos'  
+      titulo: 'Como funcionamos',  
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'Registras tu empresa o micronegocio' 
+      titulo: 'Registras tu empresa o micronegocio' ,
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'Validamos que todo este en orden' 
+      titulo: 'Validamos que todo este en orden', 
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'con un algoritmo analizamos los negocios que te pudieran interesar' 
+      titulo: 'con un algoritmo analizamos los negocios que te pudieran interesar' ,
     },
   ];
+  vertical={
+    direction:"vertical",
+  };
+
+  horizontal={
+    direction:"horizontal",
+    loop:true,
+  };
 }
 
 
