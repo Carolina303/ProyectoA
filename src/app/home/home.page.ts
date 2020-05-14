@@ -11,23 +11,24 @@ export class HomePage {
 
   slides = [
     {
-      img:'/assets/img/img1.jpg',
-      titulo: 'Como funcionamos'  
+
+      img: '/assets/img/img1.jpg',
+      titulo: 'Como funcionamos',  
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'Registras tu empresa o micronegocio' 
+      titulo: 'Registras tu empresa o micronegocio' ,
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'Validamos que todo</br>este en orden' 
+      titulo: 'Validamos que todo este en orden', 
     },
     {
       img:'assets/img/img1.jpg',
-      titulo: 'con un algoritmo<br>analizamos los negocios<br>que te pudieran interesar' 
+      titulo: 'con un algoritmo analizamos los negocios que te pudieran interesar' ,
     },
-  
   ];
+
   slides1 = [
     {
       img:'/assets/img/ejem1.jpg',
@@ -43,4 +44,16 @@ export class HomePage {
     },
     
   ];
+
+  vertical={
+    direction:"vertical",
+  };
+
+  horizontal={
+    direction:"horizontal",
+    loop:true,
+  };
+
 }
+
+

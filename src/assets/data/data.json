@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "name": "cuisoft",
+        "img": "assets/logo.jpeg",
+        "text" : "Esta empresa se dedica a vender paletas de hielo",
+        "dir" : ""
+      },
+      {
+        "id": "2",
+        "name": "cuiware",
+        "img": "assets/img/logo.jpeg"
+      } 
+]

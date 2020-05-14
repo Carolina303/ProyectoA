@@ -1,18 +1,81 @@
-<ion-header [translucent]="true">
+<ion-header >
   <ion-toolbar>
-    <ion-title>
-      Blank
+
+    <ion-buttons slot="start">
+      <ion-button color="light">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button (click)="readJson()" color="light" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/img/logo1.jpeg"/>
     </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-slides pager="true">
 
+  <ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
+    <ion-slide style="display: block;">
+      <ion-slides class="slides-h" pager="true" [options]="horizontal">
+        <ion-slide *ngFor="let slide of slides | slice:0:2">
+          <div class="slides">
+           <img src={{slide.img}}/>
+          </div>
+          <div class="titulo">
+            <p>{{slide.titulo}}</p>
+          </div>
+        </ion-slide>
+      </ion-slides>
+    </ion-slide>
+    <ion-slide>
+      <div style="background: yellow; height: 100%; width: 100%;"></div>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>
+
+
+<!--
+<ion-content [fullscreen]="true">
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/img/logo1.jpeg"/>
+    </ion-title>
+  </ion-toolbar>
+</ion-header
+<ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
+  <ion-slide style="display: block;">
+    <ion-slides class="slides-h" pager="true" [options]="horizontal" >
+      <ion-slide *ngFor="let slide of slides">
+        <div class="titulo">
+          <div class="titulo">
+            <h3 (click)="gotoArticle()">{{slide.titulo}}</h3>
+            <p>{{slide.titulo}}</p>
+          </div>
+          <img src={{slide.img}}/>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-slide>
+  <ion-slide>
+    <div style="background: yellow; height: 100%; width: 100%;"></div>
+  </ion-slide>
+</ion-slides>
+</ion-content>
+-->
+<!--
+  <ion-slides pager="true">
     <ion-slide *ngFor="let slide of slides">
-      <div>
+      <div class="titulo">
+        <h3>{{slide.titulo}}</h3>
         <img src={{slide.img}}/>
       </div>
+
       <div>
         <h3 [innerHTML]="slide.img"> </h3>
       </div> 
@@ -45,3 +108,16 @@
   </ion-grid>
 </ion-footer>
 
+
+    </ion-slide>
+  </ion-slides>
+  <ion-slides pager="true">
+    <ion-slide *ngFor="let slide of slides">
+      <div class="titulo">
+        <h3>{{slide.titulo}}</h3>
+        <img src={{slide.img}}/>
+      </div>
+    </ion-slide>
+  </ion-slides> 
+-->
+r

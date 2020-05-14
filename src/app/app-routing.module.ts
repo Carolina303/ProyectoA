@@ -12,8 +12,29 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'registroempresa',
+    loadChildren: () => import('./registroempresa/registroempresa.module').then( m => m.RegistroempresaPageModule)
+  },
+  {
+    path: 'listempresa',
+    loadChildren: () => import('./listempresa/listempresa.module').then( m => m.ListempresaPageModule)
+  },
+  {
+    path: 'inversion/:name/:img/:text',
+    loadChildren: () => import('./inversion/inversion.module').then( m => m.InversionPageModule)
   },
 ];
 
