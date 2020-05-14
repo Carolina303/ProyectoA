@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { bindCallback } from 'rxjs';
+import { AbsoluteSourceSpan } from '@angular/compiler';
 
 @Component({
   selector: 'app-home',
@@ -26,6 +28,23 @@ export class HomePage {
       titulo: 'con un algoritmo analizamos los negocios que te pudieran interesar' ,
     },
   ];
+
+  slides1 = [
+    {
+      img:'/assets/img/ejem1.jpg',
+      titulo: 'Te interesa'
+    },
+    {
+      img:'/assets/img/ejem2.jpg',
+      titulo: 'Te interesa'
+    },
+    {
+      img:'/assets/img/ejem3.jpg',
+      titulo: 'Te interesa'
+    },
+    
+  ];
+
   vertical={
     direction:"vertical",
   };
@@ -34,6 +53,7 @@ export class HomePage {
     direction:"horizontal",
     loop:true,
   };
+
 }
 
 
