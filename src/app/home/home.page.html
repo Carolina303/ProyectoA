@@ -15,10 +15,33 @@
       </div>
       <div>
         <h3 [innerHTML]="slide.img"> </h3>
-      </div>
-      
+      </div> 
     </ion-slide>
   </ion-slides> 
-  
+
+  <ion-slides>
+    <ion-slide *ngFor="let slide of slides1">
+      <div>
+        <img src={{slide.img}}/>
+      </div>
+      <div>
+        <h3 [innerHTML]="slide.img"> </h3>
+      </div>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
+
+<ion-footer no-border>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="10" offset="1">
+        <ion-button color= "primary"
+                    expand="full"
+                    shape="round">
+          Me interesa
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
 

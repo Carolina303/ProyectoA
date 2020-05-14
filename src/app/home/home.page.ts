@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { bindCallback } from 'rxjs';
+import { AbsoluteSourceSpan } from '@angular/compiler';
 
 @Component({
   selector: 'app-home',
@@ -25,5 +27,20 @@ export class HomePage {
       titulo: 'con un algoritmo<br>analizamos los negocios<br>que te pudieran interesar' 
     },
   
+  ];
+  slides1 = [
+    {
+      img:'/assets/img/ejem1.jpg',
+      titulo: 'Te interesa'
+    },
+    {
+      img:'/assets/img/ejem2.jpg',
+      titulo: 'Te interesa'
+    },
+    {
+      img:'/assets/img/ejem3.jpg',
+      titulo: 'Te interesa'
+    },
+    
   ];
 }
