@@ -1,6 +1,7 @@
 ion-toolbar img{
-  width: 70%;
-
+  width: 35%;
+  margin-top: 5%;
+  margin-bottom:5%;
 };
 
 ion-slide{
@@ -13,12 +14,23 @@ ion-slides {
   --bullet-background-active: #B3BEC0;
 }
 
-ion-toolbar{
-  --background: #4DCDF9;
-  --color: black;
-  top: 0;
-}
 
 .double{
   height: 50%;
+}
+
+.double p{
+
+  width: 100%;
+  position: fixed;
+  margin-top:20%;
+  color:white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+
+.double img{
+  height: 100%;
+  object-fit: cover;
 }

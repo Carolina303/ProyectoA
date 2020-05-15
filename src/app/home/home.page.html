@@ -2,32 +2,38 @@
   <ion-toolbar>
 
     <ion-buttons slot="start">
-      <ion-button color="light">
+      <ion-button color="primary">
         <ion-icon name="search-outline"></ion-icon>
       </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
+      <ion-menu-button color="primary" autoHide="false"></ion-menu-button>
     </ion-buttons>
     <ion-title style="text-align: center;">
-      <img src="../../assets/img/logo1.jpeg"/>
+      <img src="../../assets/img/tank.png"/>
     </ion-title>
 
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  
 
   <ion-slides scrollbar="true" [options]="vertical" > 
     <ion-slide>
       <ion-slides class="double"  pager="true" >
         <ion-slide *ngFor="let slide of slides">
-          <img src={{slide.img}}/>
+          <div style="width: 100%; height: 100%;">
+            <p>{{slide.titulo}}</p>
+            <img src={{slide.img}}/>
+          </div>
         </ion-slide>
       </ion-slides>
       <ion-slides class="double" pager="true" >
         <ion-slide *ngFor="let slide of slides">
+          <div style="width: 100%; height: 100%;">
            <img src={{slide.img}}/>
+          </div>
         </ion-slide>
       </ion-slides>
     </ion-slide>
