@@ -3,22 +3,41 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>login</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/img/tank.png"/>
+    </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>  
-  <button class="button top">
+  <ion-card>
+    <ion-item>
+     <ion-label floating>
+      <ion-icon name="person"></ion-icon>
+       Correo/usuario
+      </ion-label>
+      <ion-input type="email" name="email" clearInput="true"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label floating>
+        <ion-icon ios="ios-lock" md="md-lock"></ion-icon>
+        Contraseña</ion-label>
+      <ion-input type="password" name="password" clearInput="true"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <button>
     Entrar
   </button>
-    
-    <button class="button" routerLink="/registro">
+    <button routerLink="/registro">
      Registrar
     </button>
-  
-   
-  <button class="button border-bottom" routerLink="/registroempresa">
+  <button routerLink="/registroempresa">
     Registrar Empresa
   </button>
-
+  
 </ion-content>

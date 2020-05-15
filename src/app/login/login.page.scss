@@ -1,15 +1,22 @@
-.button{
-    width: 80%;
-    height: 10%;
-    background: rgb(5, 170, 5);
+ion-toolbar img{
+    width: 35%;
+    margin-top: 5%;
+    margin-bottom:5%;
+  };
+button{
+    width: 40%;
+    height: 5%;
+    background: rgb(78, 127, 218);
+    margin-bottom:10px;
+    border-radius: 20px 20px 20px 20px ;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 12px;
+    
+    color:white;
+}
 
-    margin-left: 10%;
-    margin-right: 10%;
+ion-card{
+    margin-top: 30%;
 }
-.top{
-    border-radius: 20px 0 0 0 ;
-}
-.border-bottom {
-    //border-bottom-right-radius: 20px;
-    border-radius: 0 0 20px 0;
-} 
+

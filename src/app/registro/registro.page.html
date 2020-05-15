@@ -3,7 +3,13 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/"></ion-back-button>
     </ion-buttons>
-    <ion-title>Registro</ion-title>
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/img/tank.png"/>
+    </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
@@ -25,11 +31,13 @@
         </ion-item>
   
         <ion-item>
+          
           <ion-label floating>Contraseña:</ion-label>
           <ion-input type="password" name="password" clearInput="true"></ion-input>
         </ion-item>
   
         <ion-item>
+          <ion-icon name="md-key"></ion-icon>
           <ion-label floating>Confirme Contraseña:</ion-label>
           <ion-input type="password" name="password" clearInput="true"></ion-input>
         </ion-item>
