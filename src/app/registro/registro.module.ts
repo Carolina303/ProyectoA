@@ -18,3 +18,5 @@ import { RegistroPage } from './registro.page';
   declarations: [RegistroPage]
 })
 export class RegistroPageModule {}
+
+
