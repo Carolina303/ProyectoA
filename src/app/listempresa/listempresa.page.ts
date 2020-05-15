@@ -1,24 +1,28 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-listempresa',
   templateUrl: './listempresa.page.html',
   styleUrls: ['./listempresa.page.scss'],
 })
 export class ListempresaPage  {
-  listempresa : any
+  category;
 
-  constructor( private router : Router ) {
+  list=[];
+
+  constructor( private activatedRoute: ActivatedRoute ) {
 
   }
   ngOnInit(){
-    fetch("./assets/data/data.json").then(res => res.json()).then(json => {
-      this.listempresa=json;
-    })
-  }
+    this.category=this.activatedRoute.snapshot.paramMap.get('category');
 
-  gotoInversion(name,img,text){
-    this.router.navigate( ['/inversion',name,img,text] );
-  }
+    var dir="./assets/data/"+this.category+".json";
 
+    fetch(dir).then(res => res.json()).then(json => {
+      this.list=json;
+    });
+    }
+ 
 } 
+
+

@@ -25,11 +25,11 @@ const routes: Routes = [
     loadChildren: () => import('./registroempresa/registroempresa.module').then( m => m.RegistroempresaPageModule)
   },
   {
-    path: 'listempresa',
+    path: 'listempresa/:category',
     loadChildren: () => import('./listempresa/listempresa.module').then( m => m.ListempresaPageModule)
   },
   {
-    path: 'inversion/:name/:img/:text',
+    path: 'inversion/:category/:id',
     loadChildren: () => import('./inversion/inversion.module').then( m => m.InversionPageModule)
   },
 ];

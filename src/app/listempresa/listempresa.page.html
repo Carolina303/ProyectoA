@@ -10,15 +10,15 @@
 <ion-content>
   
   <ion-list>
-    <ion-item *ngFor="let list of listempresa " >
-      <ion-avatar slot="start" (click)="gotoInversion(list.name, list.img, list.text)">
-        <ion-img  [src]="list.img"></ion-img>
+    <ion-item *ngFor="let companys of list" [routerLink]="['/inversion', category,companys.id]">
+      <ion-avatar slot="start">
+        <ion-img  [src]="companys.img"></ion-img>
       </ion-avatar>
       <ion-label>
-        {{list.name}}
+        {{companys.name}}
       </ion-label>
 
-
+ 
  
     <!--
       <ion-thumbnail >

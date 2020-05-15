@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { bindCallback } from 'rxjs';
 import { AbsoluteSourceSpan } from '@angular/compiler';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,6 @@ import { AbsoluteSourceSpan } from '@angular/compiler';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
   slides = [
     {
 
@@ -44,7 +44,6 @@ export class HomePage {
     },
     
   ];
-
   vertical={
     direction:"vertical",
   };
@@ -54,6 +53,17 @@ export class HomePage {
     loop:true,
   };
 
+
+
+
+
+//NO MOVER, NO MODIFICAR ESTO ES DE BACK
+  top=[];
+  constructor(  private activatedRoute: ActivatedRoute ) { }
+  ngOnInit(){
+    fetch("./assets/data/data.json").then(res => res.json()).then(json => {
+      this.top[0]=json[json.length-1];
+    });
+  }
+//NO MOVER, NO MODIFICAR ESTO ES DE BACK
 }
-
-
