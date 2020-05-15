@@ -1,9 +1,11 @@
-ion-toolbar img{
-    width: 70px;
-    color: blue($color: #4DCDF9);
-};
+ion-toolbar{
+    --background: #4DCDF9;
+    --color: white;
+    top: 0;
+  }
 
 ion-button{
+    --background: #4DCDF9;
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
