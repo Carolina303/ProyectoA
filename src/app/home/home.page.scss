@@ -7,15 +7,6 @@ ion-slide{
   display: block;
 }
 
-.slide-img-padding{
-  padding: 100%;
-}
-
-h3{
-  font-size: 30px;
-  font-weight: lighter;
-  margin-bottom: 60px;
-}
 
 ion-slides {
   --bullet-background: #2CAFC4;
@@ -25,7 +16,9 @@ ion-slides {
 ion-toolbar{
   --background: #4DCDF9;
   --color: black;
-  position: absolute;
   top: 0;
 }
 
+.double{
+  height: 50%;
+}

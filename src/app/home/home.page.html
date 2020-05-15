@@ -7,7 +7,7 @@
       </ion-button>
     </ion-buttons>
     <ion-buttons slot="end">
-      <ion-menu-button (click)="readJson()" color="light" autoHide="false"></ion-menu-button>
+      <ion-menu-button color="light" autoHide="false"></ion-menu-button>
     </ion-buttons>
     <ion-title style="text-align: center;">
       <img src="../../assets/img/logo1.jpeg"/>
@@ -18,24 +18,23 @@
 
 <ion-content>
 
-  <ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
-    <ion-slide style="display: block;">
-      <ion-slides class="slides-h" pager="true" [options]="horizontal">
-        <ion-slide *ngFor="let slide of slides | slice:0:2">
-          <div class="slides">
+  <ion-slides scrollbar="true" [options]="vertical" > 
+    <ion-slide>
+      <ion-slides class="double"  pager="true" >
+        <ion-slide *ngFor="let slide of slides">
+          <img src={{slide.img}}/>
+        </ion-slide>
+      </ion-slides>
+      <ion-slides class="double" pager="true" >
+        <ion-slide *ngFor="let slide of slides">
            <img src={{slide.img}}/>
-          </div>
-          <div class="titulo">
-            <p>{{slide.titulo}}</p>
-          </div>
         </ion-slide>
       </ion-slides>
     </ion-slide>
-    <ion-slide>
-      <div style="background: yellow; height: 100%; width: 100%;"></div>
-    </ion-slide>
   </ion-slides>
 
+
+  
 </ion-content>
 
 
@@ -120,4 +119,4 @@
     </ion-slide>
   </ion-slides> 
 -->
-r
+
