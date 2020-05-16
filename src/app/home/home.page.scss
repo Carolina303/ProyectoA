@@ -24,7 +24,7 @@ ion-slides {
   width: 100%;
   position: fixed;
   margin-top:20%;
-  color:white;
+  color:darken($color: #000000, $amount: 0);
   font-size: 28px;
   font-weight: bold;
 }
