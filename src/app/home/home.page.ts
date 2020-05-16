@@ -13,7 +13,7 @@ export class HomePage {
     {
 
       img: '/assets/img/Car1/1.jpg',
-      titulo: '¿Quienes somos?',  
+      titulo: '¿Quienes  somos?',  
     },
     {
       img:'/assets/img/Car1/2.jpg',
