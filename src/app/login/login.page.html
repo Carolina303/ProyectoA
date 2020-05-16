@@ -7,14 +7,17 @@
       <ion-menu-button color="primary" autoHide="false"></ion-menu-button>
     </ion-buttons>
     <ion-title style="text-align: center;">
-      <img src="../../assets/img/tank.png"/>
+      <img src="../../assets/img/logo/tank.png"/>
     </ion-title>
 
   </ion-toolbar>
+ 
 </ion-header>
 
+ 
 <ion-content>  
   <ion-card>
+    <img src="../../assets/img/login/1123.png"/>
     <ion-item>
      <ion-label floating>
       <ion-icon name="person"></ion-icon>
@@ -29,15 +32,15 @@
       <ion-input type="password" name="password" clearInput="true"></ion-input>
     </ion-item>
   </ion-card>
-
-  <button>
+  <div class="centrado">
+  <ion-button shape="round">
     Entrar
-  </button>
-    <button routerLink="/registro">
+  </ion-button>
+    <ion-button shape="round" routerLink="/registro">
      Registrar
-    </button>
-  <button routerLink="/registroempresa">
+    </ion-button>
+  <ion-button shape="round" routerLink="/registroempresa">
     Registrar Empresa
-  </button>
-  
+  </ion-button>
+</div>
 </ion-content>

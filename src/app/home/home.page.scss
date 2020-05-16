@@ -20,15 +20,15 @@ ion-slides {
 }
 
 .double p{
-
-  width: 100%;
+  border-color: black;
+  width: 90%;
   position: fixed;
   margin-top:20%;
-  color:darken($color: #000000, $amount: 0);
+  color: white;
   font-size: 28px;
   font-weight: bold;
-}
 
+}
 
 .double img{
   height: 100%;
