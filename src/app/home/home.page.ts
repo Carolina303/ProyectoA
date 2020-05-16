@@ -12,37 +12,40 @@ export class HomePage {
   slides = [
     {
 
-      img: '/assets/img/img1.jpg',
-      titulo: 'Como funcionamos',  
+      img: '/assets/img/Car1/1.jpg',
+      titulo: '¿Quienes somos?',  
     },
     {
-      img:'assets/img/img1.jpg',
-      titulo: 'Registras tu empresa o micronegocio' ,
+      img:'/assets/img/Car1/2.jpg',
+      titulo: 'Tank es una app que hace más sencillo la relación entre empresarios' ,
     },
     {
-      img:'assets/img/img1.jpg',
-      titulo: 'Validamos que todo este en orden', 
+      img:'/assets/img/Car1/3.jpg',
+      titulo: 'Creamos puentes entre distintos negocios de manera segura', 
     },
     {
-      img:'assets/img/img1.jpg',
-      titulo: 'con un algoritmo analizamos los negocios que te pudieran interesar' ,
+      img:'/assets/img/Car1/4.jpg',
+      titulo: 'Analizamos los negocios que te pudieran interesar' ,
     },
   ];
 
   slides1 = [
     {
-      img:'/assets/img/ejem1.jpg',
-      titulo: 'Te interesa'
+      img:'/assets/img/Car2/1.jpg',
+      titulo: '¿Como Funciona?'
     },
     {
-      img:'/assets/img/ejem2.jpg',
-      titulo: 'Te interesa'
+      img:'/assets/img/Car2/2.jpeg',
+      titulo: 'Registras tu empresa o negocio',
     },
     {
-      img:'/assets/img/ejem3.jpg',
-      titulo: 'Te interesa'
+      img:'/assets/img/Car2/3.jpeg',
+      titulo: 'Con un algoritmo, evaluamos tus intereses de crecimiento económico y comercial'
     },
-    
+    {
+      img:'/assets/img/Car2/4.jpeg',
+      titulo: 'Y desglosamos las opciones que te pudieran interesar'
+    },
   ];
   vertical={
     direction:"vertical",
