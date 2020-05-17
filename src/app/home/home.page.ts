@@ -17,15 +17,15 @@ export class HomePage {
     },
     {
       img:'/assets/img/Car1/2.jpg',
-      titulo: 'Tank es una app que hace más sencillo la relación entre empresarios' ,
+      titulo: 'Tank es una app que hace más sencilla la relación entre empresarios' ,
     },
     {
       img:'/assets/img/Car1/3.jpg',
       titulo: 'Creamos puentes entre distintos negocios de manera segura', 
     },
     {
-      img:'/assets/img/Car1/4.jpg',
-      titulo: 'Analizamos los negocios que te pudieran interesar' ,
+      img:'/assets/img/Car1/4.jpeg',
+      titulo: 'Analizamos los negocios de tu interes' ,
     },
   ];
 
@@ -39,7 +39,7 @@ export class HomePage {
       titulo: 'Registras tu empresa o negocio',
     },
     {
-      img:'/assets/img/Car2/3.jpeg',
+      img:'/assets/img/Car2/3.jpg',
       titulo: 'Con un algoritmo, evaluamos tus intereses de crecimiento económico y comercial'
     },
     {
