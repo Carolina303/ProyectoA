@@ -9,23 +9,23 @@
     <ion-title style="text-align: center;">
       <img src="../../assets/img/logo/tank.png"/>
     </ion-title>
+
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
-<form>
-  <ion-card>
-    <img src="../../assets/img/login/1123.png"/>
-  <ion-list>  
-    
+<ion-content padding>
+  <form>
+    <ion-card>
+      <img src="../../assets/img/login/1123.png"/>
+    <ion-list>  
+      <ion-item>
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label floating>  Usuario:</ion-label>
+        <ion-input type="text" name="deezerID" clearinput="true" required></ion-input>
+      </ion-item>
+      
     <ion-item>
-      <ion-icon name="person-outline"></ion-icon>
-      <ion-label floating>  Usuario:</ion-label>
-      <ion-input type="text" name="deezerID" clearinput="true" required></ion-input>
-    </ion-item>
-
-    <ion-icon name="receipt-outline"></ion-icon>
+      <ion-icon name="receipt-outline"></ion-icon>
       <ion-label floating> CURP:</ion-label>
       <ion-input type="email" name="CURP" clearInput="true"></ion-input>
     </ion-item>
@@ -36,30 +36,36 @@
       <ion-input type="text" name="Identificacion Oficial" clearInput="true"></ion-input>
     </ion-item>
 
-    <ion-item>
-      <ion-icon name="mail-outline"></ion-icon>
-      <ion-label floating>  Correo:</ion-label>
-      <ion-input type="email" name="email" clearInput="true"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon name="lock-closed-outline"></ion-icon>
-      <ion-label floating>Contraseña:</ion-label>
-      <ion-input type="password" name="password" clearInput="true"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-icon name="key-outline"></ion-icon>
-      <ion-label floating>Confirme Contraseña:</ion-label>
-      <ion-input type="password" name="password" clearInput="true"></ion-input>
-    </ion-item>
-  </ion-list>
-</ion-card>
-
-    <ion-item>
-      <ion-label floating>No soy un robot</ion-label>
-      <ion-checkbox required></ion-checkbox>
-   </ion-item>
-
-<ion-button shape="round">Enviar</ion-button>
+      <ion-item>
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-label floating>  Correo:</ion-label>
+        <ion-input type="email" name="email" clearInput="true"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <ion-label floating>Contraseña:</ion-label>
+        <ion-input type="password" name="password" clearInput="true"></ion-input>
+      </ion-item>
+  
+      <ion-item>
+        <ion-icon name="key-outline"></ion-icon>
+        <ion-label floating>Confirme Contraseña:</ion-label>
+        <ion-input type="password" name="password" clearInput="true"></ion-input>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  
+      <ion-item>
+        <ion-label floating>No soy un robot</ion-label>
+        <ion-checkbox required></ion-checkbox>
+     </ion-item>
+    
+  </form>
+ 
+  <ion-button shape="round">Enviar</ion-button>
+  
 </ion-content>
+ 
+
+
