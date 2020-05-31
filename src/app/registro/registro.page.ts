@@ -15,7 +15,7 @@ export class RegistroPage implements OnInit {
   }
   async alertaBasica(){
     let miAlerta = this.alerta.create({
-      message: 'Su registro fue exitoso',
+      message: 'Su registro fue exitoso.',
       buttons: ['OK']
     });
  
