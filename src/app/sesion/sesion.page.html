@@ -1,0 +1,82 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/img/logo/tank.png"/>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <form>
+    <ion-card>
+     
+
+    <ion-list> 
+      
+      <ion-item>
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label floating>  Nombre(s):</ion-label>
+        <ion-input type="text" name="deezerID" clearinput="true" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="person-outline"></ion-icon>
+        <ion-label floating>  Apellido(s):</ion-label>
+        <ion-input type="text" name="deezerID" clearinput="true" required></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="document-text-outline"></ion-icon>
+        <ion-label floating> RFC:</ion-label>
+        <ion-input type="email" name="CURP" clearInput="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="call-outline"></ion-icon>
+        <ion-label floating> Telefono:</ion-label>
+        <ion-input type="email" name="CURP" clearInput="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="mail-outline"></ion-icon>
+        <ion-label floating>  Correo:</ion-label>
+        <ion-input type="email" name="email" clearInput="true"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-icon name="location-outline"></ion-icon>
+        <ion-label floating>Codigo Postal:</ion-label>
+        <ion-input type="password" name="password" clearInput="true"></ion-input>
+      </ion-item>
+
+      
+    </ion-list>
+  </ion-card>
+
+      <ion-item>
+        <ion-label floating>No soy un robot</ion-label>
+        <ion-checkbox required></ion-checkbox>
+     </ion-item>
+    
+  </form>
+
+  <div class="centrado">
+    <ion-button expand="round" fill="outline" (click)="alertaBasica()" class=".myb" >
+      Quiero invertir
+    </ion-button>
+
+    <ion-button expand="round" fill="outline" (click)="alertBasic()" class=".myb" >
+      Calcula tu retorno
+    </ion-button>
+
+  </div>
+  
+  
+</ion-content>

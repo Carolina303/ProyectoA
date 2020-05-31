@@ -31,7 +31,11 @@ const routes: Routes = [
   {
     path: 'inversion/:category/:id',
     loadChildren: () => import('./inversion/inversion.module').then( m => m.InversionPageModule)
+  },  {
+    path: 'sesion',
+    loadChildren: () => import('./sesion/sesion.module').then( m => m.SesionPageModule)
   },
+
 ];
 
 @NgModule({
