@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController, AlertController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-registro',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RegistroPage implements OnInit {
 
-  constructor() { }
-
+  constructor(public navCtrl: NavController, public alerta:AlertController) { }
+ 
   ngOnInit() {
   }
-
+  async alertaBasica(){
+    let miAlerta = this.alerta.create({
+      message: 'Su registro fue exitoso',
+      buttons: ['OK']
+    });
+ 
+    (await miAlerta).present();
+  }
 }
+
+ 
