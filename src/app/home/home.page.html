@@ -28,8 +28,12 @@
           </div>
         </ion-slide>
       </ion-slides>
+
       <ion-slides class="double" pager="true" >
         <ion-slide *ngFor="let slide of slides1">
+          <ion-button expand="full" routerLink= "/registroempresa"  class="my-button" color="#397fee"> 
+            Registrar
+          </ion-button>        
           <div style="width: 100%; height: 100%;">
            <img src={{slide.img}}/>
           </div>
@@ -37,91 +41,4 @@
       </ion-slides>
     </ion-slide>
   </ion-slides>
-
-
-  
 </ion-content>
-
-
-<!--
-<ion-content [fullscreen]="true">
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title style="text-align: center;">
-      <img src="../../assets/img/logo1.jpeg"/>
-    </ion-title>
-  </ion-toolbar>
-</ion-header
-<ion-slides scrollbar="true" [options]="vertical" style="height: 100%;" > 
-  <ion-slide style="display: block;">
-    <ion-slides class="slides-h" pager="true" [options]="horizontal" >
-      <ion-slide *ngFor="let slide of slides">
-        <div class="titulo">
-          <div class="titulo">
-            <h3 (click)="gotoArticle()">{{slide.titulo}}</h3>
-            <p>{{slide.titulo}}</p>
-          </div>
-          <img src={{slide.img}}/>
-        </div>
-      </ion-slide>
-    </ion-slides>
-  </ion-slide>
-  <ion-slide>
-    <div style="background: yellow; height: 100%; width: 100%;"></div>
-  </ion-slide>
-</ion-slides>
-</ion-content>
--->
-<!--
-  <ion-slides pager="true">
-    <ion-slide *ngFor="let slide of slides">
-      <div class="titulo">
-        <h3>{{slide.titulo}}</h3>
-        <img src={{slide.img}}/>
-      </div>
-
-      <div>
-        <h3 [innerHTML]="slide.img"> </h3>
-      </div> 
-    </ion-slide>
-  </ion-slides> 
-
-  <ion-slides>
-    <ion-slide *ngFor="let slide of slides1">
-      <div>
-        <img src={{slide.img}}/>
-      </div>
-      <div>
-        <h3 [innerHTML]="slide.img"> </h3>
-      </div>
-    </ion-slide>
-  </ion-slides>
-</ion-content>
-
-<ion-footer no-border>
-  <ion-grid fixed>
-    <ion-row>
-      <ion-col size="10" offset="1">
-        <ion-button color= "primary"
-                    expand="full"
-                    shape="round">
-          Me interesa
-        </ion-button>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-</ion-footer>
-
-
-    </ion-slide>
-  </ion-slides>
-  <ion-slides pager="true">
-    <ion-slide *ngFor="let slide of slides">
-      <div class="titulo">
-        <h3>{{slide.titulo}}</h3>
-        <img src={{slide.img}}/>
-      </div>
-    </ion-slide>
-  </ion-slides> 
--->
-

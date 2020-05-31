@@ -31,20 +31,21 @@ export class HomePage {
 
   slides1 = [
     {
-      img:'/assets/img/Car2/1.jpg',
-      titulo: '¿Como Funciona?'
-    },
-    {
-      img:'/assets/img/Car2/2.jpeg',
+      img:'/assets/img/Car2/1.jpeg',
       titulo: 'Registras tu empresa o negocio',
+
     },
     {
-      img:'/assets/img/Car2/3.jpg',
+      img:'/assets/img/Car2/2.jpg',
       titulo: 'Con un algoritmo, evaluamos tus intereses de crecimiento económico y comercial'
     },
     {
-      img:'/assets/img/Car2/4.jpeg',
-      titulo: 'Y desglosamos las opciones que te pudieran interesar'
+      img:'/assets/img/Car2/3.jpg',
+      titulo: 'Desglosamos las opciones que te pudieran interesar'
+    },
+    {
+      img:'/assets/img/Car2/4.jpg',
+      titulo: 'Invirtiendo tu dinero de manera fácil y segura'
     },
   ];
   vertical={
