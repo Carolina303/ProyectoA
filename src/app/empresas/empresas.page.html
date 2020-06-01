@@ -1,0 +1,105 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button color="primary" autoHide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">
+      <img src="../../assets/img/logo/tank.png"/>
+    </ion-title>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="data:image/png;base64,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"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2>PANASONIC</h2>
+          <h3>Es la principal marca de los productos electronicos</h3>
+          <p>Comunicate al 01 800 847 7262</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="data:image/jpeg;base64,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"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2>UBISOFT</h2>
+          <h3>Es una compaña Francesa desarrolladora y distribuida de videojuegos</h3>
+          <p>Capital social 728 millones de euros</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="http://farmon.com/wp-content/uploads/2015/06/farmon-logo.png"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2>FARM-ON</h2>
+          <h3>Se encarga de productos para la ganaderia</h3>
+          <p>Contacta al 6692-48-00-77</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="https://www.altonivel.com.mx/assets/images/Estructura_V3/Negocios/Empresas/ALFA.jpg"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2>ALFA</h2>
+          <h3>Es una empresa mexicana integrada por 4 tipos de negocios:Alpek, Sigma, Nemak y Onexa</h3>
+          <p>Cotizacion de las acciones MXN 11.76 -0.05(-0.42%)</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="https://media-exp1.licdn.com/dms/image/C4E0BAQHqJDuhjM3vXw/company-logo_200_200/0?e=2159024400&v=beta&t=Pqmq6dRSzZLnPuj0bagdxp2YJqgNXFD4WTXOZmUUjJ4"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2>CAFÉ DEL PACÍFICO</h2>
+          <h3>Somos una empresa dedicada al desarrollo de productos y conceptos innovadores en torno a la cultura del café</h3>
+          <p>Contacto 01800(22333646) clientes@caffenio.com</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+
+    <ion-item>
+      <ion-item>
+        <ion-avatar slot="start">
+          <ion-img src="https://media-exp1.licdn.com/dms/image/C4E0BAQGAMqq5Y0BZKQ/company-logo_200_200/0?e=2159024400&v=beta&t=zOqdz2V2qpSsCcGPKQE2UIxK-OWW2ATJVFmpYegzs7M"></ion-img>
+        </ion-avatar>
+        <ion-label>
+          <h2>MASNEGOCIO</h2>
+          <h3>Empresa en Latinoamerica encargada de ofrecer Sotware as a Service desde 2000</h3>
+          <p>Av.Insurgentes Sur 2375,Tizapán San Ángel, 01090 Ciudad de México,CDMX</p>
+        </ion-label>
+      </ion-item>
+    </ion-item>
+  
+  
+  </ion-list>
+
+
+
+
+
+
+</ion-content>
